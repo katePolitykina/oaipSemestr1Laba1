@@ -54,7 +54,8 @@ begin
           writeln(a:20:4 , '     ', f:20:4);
           a:=a+h;
         end;
-       l:=f;                                      // защита от повторов
+                                        // защита от повторов
+       l:=f;
        f:=  ln(ln(2*pi*b))-((abs(sin(sqrt(1.1*b))))/(b-1/7))/b ;
        if abs(f-l)<0.00001 then
         write('')
@@ -106,3 +107,7 @@ begin
     writeln ('для завершения программы нажмите enter');
    readln;
 end.
+
+
+
+
